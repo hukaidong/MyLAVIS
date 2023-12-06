@@ -14,7 +14,7 @@ COPY . /lavis
   
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked <<-EOT
   cd /lavis
-  pip3 install --upgrade pip
+  pip3 install --user --upgrade pip
   pip3 install -e .
-  pip3 install jupyterlab
+  pip3 install numpy jupyterlab
 EOT
