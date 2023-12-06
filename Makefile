@@ -1,6 +1,6 @@
 DOCKER_VERBOSE_ARGS :=
 ifneq ($(VERBOSE),)
-	DOCKER_VERBOSE_ARGS := --no-cache --force-rm --progress=plain
+	DOCKER_VERBOSE_ARGS := --progress=plain
 endif
 
 
